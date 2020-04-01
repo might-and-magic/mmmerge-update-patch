@@ -2,4 +2,5 @@ mmarch.exe
 /nsis_folder/MMMerge_Update_*.exe
 /nsis_folder/patch.exe
 /nsis_folder/*.zip
+/nsis_folder/*.7z
 /mmmerge-*/
