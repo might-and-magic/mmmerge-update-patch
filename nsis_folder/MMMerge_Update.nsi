@@ -71,6 +71,7 @@ Section
 
 		RMDir /r /REBOOTOK "$INSTDIR\Scripts\General\Misc"
 		RMDir /r /REBOOTOK "$INSTDIR\Scripts\General\Obsolete"
+		RMDir /r /REBOOTOK "$INSTDIR\DataFiles"
 
 		File /r /x *.todelete /x *.mmarchkeep files\*.*
 
