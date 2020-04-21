@@ -547,12 +547,12 @@ function events.GameInitialized2()
 	mov eax, dword [ss:esp+0x8]
 	mov ecx, dword [ss:esp+0xC]
 	pushad
-	mov edi, edx
-	xor edx, edx
+	mov edi, 1
 	xor ebx, ebx
 	mov ebp, 0x1006148
 	mov esi, 0xfeb360
-	push edi
+	push edx
+	dec edx
 	push ebx
 	push ebx
 	call absolute 0x425b67
@@ -560,7 +560,14 @@ function events.GameInitialized2()
 	retn]])
 
 	function CastQuickSpell(PlayerId, SpellId)
-		mem.call(CastQuickSpellAsm, 0, PlayerId+1, Party.PlayersArray[PlayerId]["?ptr"], SpellId)
+		local Player	= Party[PlayerId]
+		local OldSpell	= Player.QuickSpell
+		Player.QuickSpell = SpellId
+		if SpellId ~= OldSpell then
+			Game.PlaySound(10000 + 1000 * math.floor((SpellId-1)/11) + (SpellId-1) % 11 * 10)
+		end
+		mem.call(CastQuickSpellAsm, 0, PlayerId+1, Player["?ptr"], SpellId)
+		Player.QuickSpell = OldSpell
 	end
 
 	function GiveMouseItemDirectly(RosterId)
