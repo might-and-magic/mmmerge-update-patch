@@ -11,7 +11,7 @@
 ;Variables and constants
 
 !define OUTFILE "MMMerge_Update"
-!define VERSION "2020-04-??"
+!define VERSION "2020-05-26"
 
 !define VERSIONDOT "4.0.0.0"
 
@@ -69,9 +69,9 @@ Section
 		SetOutPath $INSTDIR
 		File mmarch.exe
 
+		RMDir /r /REBOOTOK "$INSTDIR\DataFiles"
 		RMDir /r /REBOOTOK "$INSTDIR\Scripts\General\Misc"
 		RMDir /r /REBOOTOK "$INSTDIR\Scripts\General\Obsolete"
-		RMDir /r /REBOOTOK "$INSTDIR\DataFiles"
 
 		File /r /x *.todelete /x *.mmarchkeep files\*.*
 
@@ -79,6 +79,13 @@ Section
 		Delete "Data\LocalizeTables.txt"
 		Delete "Data\new.lod"
 		Delete "Data\weather.icons.lod"
+		Delete "Scripts\Modules\PathfinderAsmBroken.lua"
+		Delete "Scripts\Modules\PathfinderAsmOld.lua"
+
+		nsExec::Exec 'mmarch delete "Data\icons.lod" "cd1.evt"'
+		nsExec::Exec 'mmarch delete "Data\icons.lod" "cd2.evt"'
+		nsExec::Exec 'mmarch delete "Data\icons.lod" "cd3.evt"'
+		nsExec::Exec 'mmarch delete "Data\icons.lod" "lwspiral.evt"'
 
 		nsExec::Exec 'mmarch add "Data\EnglishT.lod" "Data\EnglishT.lod.mmarchive\*.*"'
 		RMDir /r /REBOOTOK "$INSTDIR\Data\EnglishT.lod.mmarchive"

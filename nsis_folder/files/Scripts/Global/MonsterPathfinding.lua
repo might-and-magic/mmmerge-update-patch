@@ -785,7 +785,7 @@ end
 
 local function MonsterNeedsProcessing(Mon)
 	local result = true
-	if not (Mon.Active and Mon.HP >= 0) then
+	if not (Mon.Active and Mon.HP > 0) then
 		return false
 	end
 
@@ -798,7 +798,7 @@ local function MonsterNeedsProcessing(Mon)
 			result = GetDist2(Mon, Party) < 12000
 		end
 	end
-	return result and (Mon.AIState == 6 or (Mon.ShowAsHostile and (Mon.AIState == 1 or Mon.AIState == 0)))
+	return result and (Mon.AIState == 6 or (Mon.ShowAsHostile and Mon.AIState == 1))
 end
 
 local NextMon = 0
