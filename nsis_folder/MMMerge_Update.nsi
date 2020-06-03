@@ -58,8 +58,7 @@ RequestExecutionLevel user
 
 Section
 ; if $EXEDIR\Scripts\General\1_TownPortalSwitch.lua exists,
-; it will be safe to assume $EXEDIR is MMMerge folder,
-; otherwise, user should select the MMMerge folder
+; it will be safe to assume $EXEDIR is MMMerge folder
 	IfFileExists "$EXEDIR\Scripts\General\1_TownPortalSwitch.lua" is_mmmerge_folder is_not_mmmerge_folder
 
 	is_mmmerge_folder:
