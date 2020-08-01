@@ -1,5 +1,6 @@
 
 local u1,u4,i1,i4,memstr = mem.u1,mem.u4,mem.i1,mem.i4,mem.string
+local topointer = mem.topointer
 local call = mem.call
 local sqrt = math.sqrt
 
@@ -156,6 +157,66 @@ popad
 popfd
 retn]])
 
+-- takes text ptr, x, y, width
+local ShowTooltipAs = mem.asmproc([[
+push ebp
+mov ebp, esp
+sub esp, 0x78
+
+mov eax, dword [ss:ebp+0x8]
+mov dword [ss:ebp-0x20], eax;		text ptr
+
+mov eax, dword [ss:ebp+0xC]
+mov dword [ss:ebp-0x68], eax;0xaa	x
+
+mov eax, dword [ss:ebp+0x10]
+mov dword [ss:ebp-0x64], eax;0x8c	y
+
+mov eax, dword [ss:ebp+0x14]
+mov dword [ss:ebp-0x60], eax;0x12c	width
+
+mov dword [ss:ebp-0x5c], 0x64;		unk
+mov dword [ss:ebp-0x58], 0x1d5;		unk
+mov dword [ss:ebp-0x54], 0xef;		unk
+
+push 0x0
+lea ecx, [ebp-0x68]
+call absolute 0x414a61
+
+add esp, 0x78
+mov esp, ebp
+pop ebp
+retn 0x10]])
+
+local function ShowTooltip(Text, X, Y, Width)
+	if type(Text) == "string" then
+		Text = topointer(Text)
+	end
+	call(ShowTooltipAs, 0, Text, X, Y, Width)
+end
+CustomUI.ShowTooltip = ShowTooltip
+
+local function DisplayTooltip(Text, Timeout, X, Y, Width, Screen)
+	local Widget = CustomUI.CreateText{
+		Text = Text,
+		X = X or 0,
+		Y = Y or 0,
+		Width = Width or 100,
+		Screen = Screen or Game.CurrentScreen,
+		Condition = function(t)
+			if Keys.IsPressed(const.Keys.LBUTTON) or os.time() > t.Timeout then
+				CustomUI.RemoveElement(t)
+			else
+				ShowTooltip(t.Text, t.X, t.Y, t.Wt)
+			end
+			return false
+		end}
+
+	Widget.Timeout = os.time() + Timeout
+	return Widget
+end
+CustomUI.DisplayTooltip = DisplayTooltip
+
 local function FindIconPtr(Name)
 	local ptr
 	local low = string.lower
@@ -173,7 +234,7 @@ CustomUI.FindIconPtr = FindIconPtr
 local function LoadIcon(Icon, Masked)
 	local IconPtr
 	if type(Icon) == "string" then
-		u4[ImageNamePtr] = mem.topointer(Icon)
+		u4[ImageNamePtr] = topointer(Icon)
 	elseif type(Icon) == "number" then
 		u4[ImageNamePtr] = Icon
 	else
@@ -260,7 +321,7 @@ local function ShowText(Str, Fnt, X, Y, Shift, R, G, B, BoxWt, BoxHt, Xof, Yof, 
 		Fnt = Game.Arrus_fnt
 	end
 
-	u4[Text] = mem.topointer(Str)
+	u4[Text] = topointer(Str)
 	u4[Font] = Fnt
 
 	i4[TextParams] = X or 0

@@ -59,8 +59,9 @@ function structs.f.GameStructure(define)
 		[0x970BEC].array(18).EditPChar  'ClassNames'
 	else
 		define
-		[mmv(nil, 0xAE3150, 0xBB3060)].array(37).EditPChar  'SkillNames'
-		[mmv(nil, 0x5C88F0, 0x5E4CB0)].array(37).EditPChar  'SkillDescriptions'
+		-- Rod: changed SkillNames and SkillDescriptions array sizes from 37 to 39
+		[mmv(nil, 0xAE3150, 0xBB3060)].array(39).EditPChar  'SkillNames'
+		[mmv(nil, 0x5C88F0, 0x5E4CB0)].array(39).EditPChar  'SkillDescriptions'
 		[mmv(nil, 0xAE3070, 0xBB2FD0)].array(36).EditPChar  'ClassNames'
 		[mmv(nil, 0x5C8560, 0x5E48F0)].array(36).EditPChar  'ClassDescriptions'
 	end

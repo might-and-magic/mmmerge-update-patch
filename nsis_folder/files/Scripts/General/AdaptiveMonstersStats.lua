@@ -18,9 +18,9 @@ const.Bolster.MonsterType = {
 	Undead 		= 1,
 	Demon 		= 2,
 	Dragon 		= 3,
-	Elf 		= 4,
+	Elf 		= 6,
 	Swimmer		= 5,
-	Immobile	= 6,
+	Immobile	= 4,
 	Titan 		= 7,
 	NoArena		= 8,
 	Creature	= 9,
@@ -33,6 +33,10 @@ const.Bolster.MonsterType = {
 	Ogre		= 16,
 	Minotaur	= 17
 	}
+
+-- Fix const.MonsterKind
+const.MonsterKind.Elf = 6
+const.MonsterKind.Immobile = 4
 
 const.Bolster.Creed = {
 	Neutral	= 0,

@@ -103,14 +103,16 @@ if not QSet.MetVerdant then
 	local InterruptDelay = 0
 	function events.CanCastTownPortal(t)
 		if not QSet.MetVerdant then
-			local CurSwicth = TownPortalControls.GetCurrentSwitch()
-			if CurSwicth == 4 and Game.Time > InterruptDelay then
+			local NeedTalk = TownPortalControls.GetCurrentSwitch() == 4 and Game.Time > InterruptDelay
+
+			-- Allow party to be rude and ignore girl - she won't interrupt second cast for 4 minutes.
+			InterruptDelay = Game.Time + const.Minute*4
+
+			if NeedTalk then
 				t.CanCast = false
 				-- Verdant interrupts cast and speaks with party.
 				evt.SpeakNPC{VerdantNPC}
 			end
-			-- Allow party to be rude and ignore girl - she won't interrupt second cast for 8 minutes.
-			InterruptDelay = Game.Time + const.Minute*8
 		end
 	end
 
@@ -121,7 +123,7 @@ if not QSet.MetVerdant then
 
 	function events.AfterLoadMap()
 
-		if not QSet.MetVerdant then
+		if not QSet.MetVerdant and not TownPortalControls.IsArena() then
 
 			if not QSet.MeetTime then
 				QSet.MeetTime = Game.Time + const.Month*8
@@ -204,7 +206,8 @@ if not QSet.GotConnectorStone then
 					if 	Game.CurrentScreen == 0
 						and not (Party.EnemyDetectorRed or Party.EnemyDetectorYellow)
 						and not Party.Flying
-						and Game.Time > StartTime then
+						and Game.Time > StartTime
+						and not TownPortalControls.IsArena() then
 
 						RemoveTimer(CCTimers.ConnStone)
 						QSet.GotConnectorStone = true
@@ -234,7 +237,7 @@ if not QSet.GotFinalQuest then
 		QSet.ContinentFinished[3] = Party.QBits[784]
 
 		local CurCont = TownPortalControls.GetCurrentSwitch()
-		if CurCont < 4 and QSet.ContinentFinished[CurCont] and not QSet.GotReward[CurCont] then
+		if CurCont < 4 and QSet.ContinentFinished[CurCont] and not QSet.GotReward[CurCont] and not TownPortalControls.IsArena() then
 
 			local RewCount = 0
 			for k,v in pairs(QSet.GotReward) do

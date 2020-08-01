@@ -61,12 +61,12 @@ local function _RelocalizeTables(PathMask)
 				for line in LineIt do
 					Words = string.split(line, "\9")
 					if Words[1] then
-						local cTable	= Words[1]
+						local cTable	= Words[1] or ""
 						local cId		= tonumber(Words[2])
-						local cField	= Words[3]
-						local cText		= tonumber(Words[4]) or Words[4]
+						local cField	= Words[3] or ""
+						local cText		= tonumber(Words[4]) or Words[4] or ""
 
-						if len(cTable) > 0  and Game[cTable] then
+						if len(cTable) > 0 and Game[cTable] then
 							LastTable = cTable
 						else
 							cTable = LastTable
@@ -89,6 +89,20 @@ local function _RelocalizeTables(PathMask)
 
 end
 
+local function CheckLocalization()
+	local ErrorStr = {}
+	local tinsert = table.insert
+	if Game.PlaceMonTxt.count < 161 then
+		tinsert(ErrorStr, "Placemon.txt: target lines count - 161, actual lines count - " .. Game.PlaceMonTxt.count)
+	end
+
+	if #ErrorStr > 0 then
+		tinsert(ErrorStr, 1, "Localization files are out of date and may cause errors.")
+		tinsert(ErrorStr, 2, "Download new files from https://www.celestialheavens.com/forum/10/16657 .")
+		debug.ErrorMessage(table.concat(ErrorStr, "\n"))
+	end
+end
+
 function RelocalizeTables()
 	_RelocalizeTables("Data/*LocalizeTables.*txt")
 	_RelocalizeTables("Data/Text localization/*.txt")
@@ -96,4 +110,5 @@ end
 
 function events.ScriptsLoaded() -- declare localization event last
 	events.GameInitialized2 = RelocalizeTables
+	events.GameInitialized2 = CheckLocalization
 end

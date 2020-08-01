@@ -4,3 +4,19 @@ mmarch.exe
 /nsis_folder/*.zip
 /nsis_folder/*.7z
 /mmmerge-*/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+
+# vi
+*~
+
+# General
+log/
+*.log

@@ -50,9 +50,11 @@ Section
 	File /r /x *.todelete /x *.mmarchkeep files\*.*
 
 	Delete "Data\breach.sprites.lod"
+	Delete "Data\gaunt.icons.lod"
 	Delete "Data\LocalizeTables.txt"
 	Delete "Data\new.lod"
 	Delete "Data\weather.icons.lod"
+	Delete "Scripts\General\ExtraQucikSpells.lua"
 	Delete "Scripts\Modules\PathfinderAsmBroken.lua"
 	Delete "Scripts\Modules\PathfinderAsmOld.lua"
 
@@ -67,6 +69,10 @@ Section
 	RMDir /r /REBOOTOK "$INSTDIR\Data\icons.lod.mmarchive"
 	nsExec::Exec 'mmarch add "Data\mm6.EnglishT.lod" "Data\mm6.EnglishT.lod.mmarchive\*.*"'
 	RMDir /r /REBOOTOK "$INSTDIR\Data\mm6.EnglishT.lod.mmarchive"
+	nsExec::Exec 'mmarch add "Data\mm6.games.lod" "Data\mm6.games.lod.mmarchive\*.*"'
+	RMDir /r /REBOOTOK "$INSTDIR\Data\mm6.games.lod.mmarchive"
+	nsExec::Exec 'mmarch add "Data\mm7.games.lod" "Data\mm7.games.lod.mmarchive\*.*"'
+	RMDir /r /REBOOTOK "$INSTDIR\Data\mm7.games.lod.mmarchive"
 	nsExec::Exec 'mmarch add "Data\patch.icons.lod" "Data\patch.icons.lod.mmarchive\*.*"'
 	RMDir /r /REBOOTOK "$INSTDIR\Data\patch.icons.lod.mmarchive"
 	nsExec::Exec 'mmarch add "Data\select.icons.lod" "Data\select.icons.lod.mmarchive\*.*"'

@@ -194,7 +194,7 @@
 	["mdt10.blv"] = 15,
 	["mdt04.blv"] = 12,
 	["mdk01.blv"] = 12,
-	["7d15.blv"] = 396,
+	["7d15.blv"] = 397,
 	["mdk04.blv"] = 12,
 	["mdt05.blv"] = 12,
 	["mdk02.blv"] = 12,
@@ -793,4 +793,59 @@
 	mem.hook(NewCode, function(d)
 		BountyText = BountyHuntFunctions.SetCurrentHunt()
 		mem.u4[0xffd410] = mem.topointer(BountyText)
+	end)
+
+	-- Add ReputationIs support (MM6 events)
+	-- evt.Add
+	mem.asmpatch(0x448B80, [[
+	cmp eax, 0xEB
+	jnz @none
+	neg dword [ebp+0xC]
+	jmp absolute 0x448CCF
+	@none:
+	cmp eax, 0xE9]])
+	-- lower bound check
+	mem.asmpatch(0x448CF2, [[
+	jg absolute 0x448CF8
+	neg ecx
+	cmp edx, ecx
+	jge absolute 0x448E29
+	mov [eax+8], ecx
+	jmp absolute 0x448E29]])
+
+	--evt.Subtract
+	mem.asmpatch(0x44943E, [[
+	cmp eax, 0xEB
+	jnz @none
+	neg dword [ebp+0xC]
+	jmp absolute 0x4494DE
+	@none:
+	cmp eax, 0xE9]])
+	-- upper bound check
+	mem.asmpatch(0x449501, [[
+	jl absolute 0x449507
+	neg ecx
+	cmp edx, ecx
+	jle absolute 0x4490C3
+	mov [eax+8], ecx
+	jmp absolute 0x4490C3]])
+
+	-- Fix damaging player upon death of monster being killed by other monsters.
+	NewCode = mem.asmpatch(0x436a59, [[
+	nop
+	nop
+	nop
+	nop
+	nop
+	test eax, eax
+	jl absolute 0x436e01
+	imul eax, eax, 0x3cc]])
+
+	mem.hook(NewCode, function(d)
+		local TargetRef, Target = GetLastAttackedMonsterTarget(d.eax)
+		if TargetRef ~= 4 then
+			--debug.ErrorMessage("Wrong attempt to attack party, actual target: " .. TargetRef .. " - " .. Target)
+			d.eax = -1
+			return
+		end
 	end)

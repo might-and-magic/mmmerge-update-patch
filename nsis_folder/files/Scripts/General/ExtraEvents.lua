@@ -371,6 +371,7 @@ mem.autohook2(0x433b0d, function() events.call("BeforeLeaveGame") end)
 function events.GameInitialized2()
 
 	local TargetBuf = mem.StaticAlloc(Map.Monsters.limit*4)
+	local LastAttackTargetBuf = mem.StaticAlloc(Map.Monsters.limit*4)
 
 	mem.asmpatch(0x404638, [[
 	mov eax, dword [ss:esp+8]
@@ -419,20 +420,24 @@ function events.GameInitialized2()
 
 	-- attack target selection
 
---~ 	mem.asmpatch(0x403f02, [[
---~ 	mov eax, dword [ss:esp+0x4]
---~ 	mov word [ds:]] .. TargetBuf+2 .. [[+eax*4], 0;
---~ 	mov word [ds:]] .. TargetBuf   .. [[+eax*4], 4; -- target is party (const.ObjectRefKind)
---~ 	mov eax, dword [ds:0xb2155c];]])
+	mem.asmpatch(0x403f02, [[
+	mov eax, dword [ss:esp+0x4]
+	mov word [ds:]] .. LastAttackTargetBuf+2 .. [[+eax*4], 0;
+	mov word [ds:]] .. LastAttackTargetBuf   .. [[+eax*4], 4; -- target is party (const.ObjectRefKind)
+	mov eax, dword [ds:0xb2155c];]])
 
---~ 	mem.asmpatch(0x403f25, [[
---~ 	mov ecx, dword [ss:esp+0x4]
---~ 	mov word [ds:]] .. TargetBuf+2 .. [[+ecx*4], ax;
---~ 	mov word [ds:]] .. TargetBuf   .. [[+ecx*4], 3; -- target is monster (const.ObjectRefKind)
---~ 	imul eax, eax, 0x3cc;]])
+	mem.asmpatch(0x403f25, [[
+	mov ecx, dword [ss:esp+0x4]
+	mov word [ds:]] .. LastAttackTargetBuf+2 .. [[+ecx*4], ax;
+	mov word [ds:]] .. LastAttackTargetBuf   .. [[+ecx*4], 3; -- target is monster (const.ObjectRefKind)
+	imul eax, eax, 0x3cc;]])
 
 	function GetMonsterTarget(i)
 		return u2[TargetBuf+i*4], u2[TargetBuf+i*4+2]
+	end
+
+	function GetLastAttackedMonsterTarget(i)
+		return u2[LastAttackTargetBuf+i*4], u2[LastAttackTargetBuf+i*4+2]
 	end
 
 	local function MonsterCanCastSpellHook(d)

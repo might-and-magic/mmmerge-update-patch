@@ -97,13 +97,12 @@ local function ChangeShopsState(State)
 	State = State or 0
 
 	local T = Game.HousesByMaps[Map.MapStatsIndex]
+	local BanTime = State == 0 and 0 or Game.Time + const.Day
 	if T then
 		for k,v in pairs(T) do
 			if k >= 1 and k <= 4 then
 				for _,i in pairs(v) do
-					local cShop = Game.ShopReputation[GetHouseWritePos(i)]
-					cShop.unk1 = State
-					cShop.unk2 = State
+					Game.ShopBanExpiration[GetHouseWritePos(i)] = BanTime
 				end
 			end
 		end
@@ -180,7 +179,7 @@ function events.MonsterKilled(mon, monIndex, defaultHandler, player, playerIndex
 	end
 
 	-- affect reputation only if monster killed by party, and monster was not reanimated.
-	if (player or mon.LastAttacker == 0) and mon.Ally ~= 9999 then
+	if player and mon.Ally ~= 9999 then
 
 		local CurCont = TownPortalControls.MapOfContinent(Map.MapStatsIndex)
 		local MonExtra = Game.Bolster.MonstersSource[mon.Id]

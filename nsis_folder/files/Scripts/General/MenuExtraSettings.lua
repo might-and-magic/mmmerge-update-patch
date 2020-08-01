@@ -14,6 +14,11 @@ local function ExitExtSetScreen()
 	if not Game.ShowWeatherEffects then
 		CustomUI.ShowSFTAnim() -- stop current animation
 	end
+
+	if Game.ImprovedPathfinding and Pathfinder and not Pathfinder.WinVersionCompatible() then
+		Game.ImprovedPathfinding = false
+		CustomUI.DisplayTooltip(Pathfinder.UncompatibilityMessage, 10, 110, 140, 420, 2)
+	end
 	events.call("ExitExtraSettingsMenu")
 
 	Game.CurrentScreen = 2
@@ -199,6 +204,14 @@ function events.GameInitialized2()
 		end
 	end
 
+	local function DelayedEscMessage(Text)
+		local f = function(str)
+			Sleep(1,1)
+			Game.EscMessage(str)
+		end
+		coroutine.resume(coroutine.create(f), Text)
+	end
+
 	function events.LoadMap(WasInGame)
 		if not WasInGame then
 			vars.ExtraSettings = vars.ExtraSettings or {}
@@ -206,6 +219,19 @@ function events.GameInitialized2()
 
 			ExSet.BolsterAmount = ExSet.BolsterAmount or 100
 			ExSet.InfinityView	= ExSet.InfinityView  or false
+
+			if ExSet.ImprovedPathfinding and not Pathfinder.WinVersionCompatible() then
+				ExSet.ImprovedPathfinding = false
+				--DelayedEscMessage(Pathfinder.UncompatibilityMessage)
+			elseif ExSet.ImprovedPathfinding == nil then
+				if Pathfinder.WinVersionCompatible() then
+					ExSet.ImprovedPathfinding = true
+				else
+					ExSet.ImprovedPathfinding = false
+					--DelayedEscMessage(Pathfinder.UncompatibilityMessage)
+				end
+			end
+
 			for k,v in pairs(VarsToStore) do
 				Game[v] = (ExSet[v] == nil) and true or ExSet[v]
 			end

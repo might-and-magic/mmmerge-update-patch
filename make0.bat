@@ -1,3 +1,5 @@
+REM to be updated for versions after 2020-04-25
+
 cd %~dp0
 
 REM You can copy old nsis_folder/files to diff_folder,
@@ -9,6 +11,7 @@ mmarch compare mmmerge-2020-03-17 mmmerge-2020-03-29 filesonly diff_folder
 mmarch compare mmmerge-2020-03-29 mmmerge-2020-04-19 filesonly diff_folder
 mmarch compare mmmerge-2020-04-19 mmmerge-2020-04-25 filesonly diff_folder
 mmarch compare mmmerge-2020-04-25 mmmerge-2020-05-26 filesonly diff_folder
+mmarch compare mmmerge-2020-05-26 mmmerge-2020-07-12 filesonly diff_folder
 
 xcopy /s /y /e /v /i "mmmerge-2019-09-22" "mmmerge-2019-09-22 to check"
 xcopy /s /y /e /v /i "mmmerge-2019-10-08" "mmmerge-2019-10-08 to check"
