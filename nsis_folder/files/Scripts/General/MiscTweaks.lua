@@ -829,23 +829,3 @@
 	jle absolute 0x4490C3
 	mov [eax+8], ecx
 	jmp absolute 0x4490C3]])
-
-	-- Fix damaging player upon death of monster being killed by other monsters.
-	NewCode = mem.asmpatch(0x436a59, [[
-	nop
-	nop
-	nop
-	nop
-	nop
-	test eax, eax
-	jl absolute 0x436e01
-	imul eax, eax, 0x3cc]])
-
-	mem.hook(NewCode, function(d)
-		local TargetRef, Target = GetLastAttackedMonsterTarget(d.eax)
-		if TargetRef ~= 4 then
-			--debug.ErrorMessage("Wrong attempt to attack party, actual target: " .. TargetRef .. " - " .. Target)
-			d.eax = -1
-			return
-		end
-	end)

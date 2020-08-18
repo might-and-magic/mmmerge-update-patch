@@ -421,16 +421,25 @@ function events.GameInitialized2()
 	-- attack target selection
 
 	mem.asmpatch(0x403f02, [[
-	mov eax, dword [ss:esp+0x4]
+	mov eax, dword [ss:ebp-0x4]
 	mov word [ds:]] .. LastAttackTargetBuf+2 .. [[+eax*4], 0;
 	mov word [ds:]] .. LastAttackTargetBuf   .. [[+eax*4], 4; -- target is party (const.ObjectRefKind)
 	mov eax, dword [ds:0xb2155c];]])
 
 	mem.asmpatch(0x403f25, [[
-	mov ecx, dword [ss:esp+0x4]
+	mov ecx, dword [ss:ebp-0x4]
 	mov word [ds:]] .. LastAttackTargetBuf+2 .. [[+ecx*4], ax;
 	mov word [ds:]] .. LastAttackTargetBuf   .. [[+ecx*4], 3; -- target is monster (const.ObjectRefKind)
 	imul eax, eax, 0x3cc;]])
+
+	-- Fix damaging player upon death of monster being killed by other monsters.
+	NewCode = mem.asmpatch(0x436a59, [[
+	movzx ecx, word [ds:]] .. LastAttackTargetBuf   .. [[+eax*4]
+	cmp ecx, 0x4
+	jne absolute 0x436e01
+	imul eax, eax, 0x3cc]])
+
+	----
 
 	function GetMonsterTarget(i)
 		return u2[TargetBuf+i*4], u2[TargetBuf+i*4+2]

@@ -1297,6 +1297,13 @@ local TraceLineAsm = mem.asmproc([[
 		jg @rep
 
 		; check for Invisible & Untouchable
+		mov edx, dword [ds:eax+0x2c]
+		bt edx, 0xd
+		jne @visible
+		bt edx, 0x1d
+		je @rep
+
+		@visible:
 
 		; choose vertexes
 		mov edx, dword [ds:eax+0x30]

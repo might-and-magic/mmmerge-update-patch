@@ -1,6 +1,11 @@
 
 function events.GameInitialized2()
 
+	if Game.PatchOptions.UILayoutActive() then
+		-- Temporary disable UI recoloring due to bugs it causes if new interface is active.
+		return
+	end
+
 	local UI = {}
 
 	---- Save/load values
