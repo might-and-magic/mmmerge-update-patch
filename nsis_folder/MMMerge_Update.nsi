@@ -11,7 +11,7 @@
 ;Variables and constants
 
 !define OUTFILE "MMMerge_Update"
-!define VERSION "2020-08-16"
+!define VERSION "2020-08-16fix"
 
 !define VERSIONDOT "4.0.0.0"
 

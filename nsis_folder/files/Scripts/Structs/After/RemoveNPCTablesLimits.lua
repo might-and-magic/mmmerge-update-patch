@@ -393,8 +393,8 @@ if mmver == 8 then
 
 		local LinesInGlobalEvtNewSize = NewGlEvtLinesCount*12 + 0x10 + 0x100
 
-		local GlobalModuleNewSpace = mem.StaticAlloc(NewGlobalEvtSize + 0x10 + LinesInGlobalEvtNewSize*4)				--0x5bb440
-		local GlobalModuleOffsetsNewSpace1 = GlobalModuleNewSpace + NewGlobalEvtSize + 0x10								--mem.StaticAlloc(LinesInGlobalEvtNewSize)	--0x5ac9e0
+		local GlobalModuleNewSpace = mem.StaticAlloc(NewGlobalEvtSize + 0x10 + LinesInGlobalEvtNewSize*4)			--0x5bb440
+		local GlobalModuleOffsetsNewSpace1 = GlobalModuleNewSpace + NewGlobalEvtSize + 0x10								--mem.StaticAlloc(LinesInGlobalEvtNewSize)	--005ac9e0
 		local GlobalModuleOffsetsNewSpace2 = GlobalModuleNewSpace + NewGlobalEvtSize + 0x10 + LinesInGlobalEvtNewSize	--mem.StaticAlloc(LinesInGlobalEvtNewSize) 	--0x587e6c
 		local GlobalModuleOffsetsNewSpace3 = GlobalModuleNewSpace + NewGlobalEvtSize + 0x10 + LinesInGlobalEvtNewSize*2	--mem.StaticAlloc(LinesInGlobalEvtNewSize) 	--0x596908
 		local GlobalModuleOffsetsNewSpace4 = GlobalModuleNewSpace + NewGlobalEvtSize + 0x10 + LinesInGlobalEvtNewSize*3	--mem.StaticAlloc(LinesInGlobalEvtNewSize) 	--0x5ccce8
@@ -426,17 +426,6 @@ if mmver == 8 then
 		mem.u4[0x44387a + 2] = GlobalModuleOffsetsNewSpace3+0x4
 		mem.u4[0x443886 + 2] = GlobalModuleOffsetsNewSpace3+0x8
 
-		mem.u4[0x443601 + 2] = GlobalModuleOffsetsNewSpace3-0x4
-		mem.u4[0x44360B + 1] = GlobalModuleOffsetsNewSpace3-0x8
-		mem.u4[0x44361B + 2] = GlobalModuleOffsetsNewSpace3-0x8
-		mem.u4[0x44365A + 1] = GlobalModuleOffsetsNewSpace3-0x4
-		mem.u4[0x4436BE + 1] = GlobalModuleOffsetsNewSpace3-0x4
-		mem.u4[0x44370F + 1] = GlobalModuleOffsetsNewSpace3-0x4
-		mem.u4[0x443750 + 1] = GlobalModuleOffsetsNewSpace3-0x4
-		mem.u4[0x443763 + 2] = GlobalModuleOffsetsNewSpace3-0x8
-
-		mem.u4[0x445f74 + 2] = GlobalModuleOffsetsNewSpace2-0x4
-		mem.u4[0x445f9c + 2] = GlobalModuleOffsetsNewSpace2-0x4
 		mem.u4[0x4435c7 + 1] = GlobalModuleOffsetsNewSpace2+0x8
 		mem.u4[0x445f60 + 2] = GlobalModuleOffsetsNewSpace2+0x4
 		mem.u4[0x445f7c + 2] = GlobalModuleOffsetsNewSpace2   	--0x587e6c
@@ -452,8 +441,8 @@ if mmver == 8 then
 		mem.u4[0x4435f7 + 1] = GlobalModuleOffsetsNewSpace1
 		mem.u4[0x4437fd + 1] = GlobalModuleOffsetsNewSpace1
 
-		mem.u4[0x440be1 + 1] = GlobalModuleNewSpace+0x4			--0x5bb440
-		mem.u4[0x440bf7 + 2] = GlobalModuleNewSpace
+		mem.u4[0x440be1 + 1] = GlobalModuleNewSpace+0x4
+		mem.u4[0x440bf7 + 2] = GlobalModuleNewSpace   			--0x5bb440
 		mem.u4[0x440c02 + 2] = GlobalModuleNewSpace
 		mem.u4[0x440c47 + 2] = GlobalModuleNewSpace+0x4
 		mem.u4[0x440c4f + 2] = GlobalModuleNewSpace
@@ -471,7 +460,7 @@ if mmver == 8 then
 		mem.IgnoreProtection(false)
 
 		ChangeGameArray("GlobalEvtLines", GlobalModuleOffsetsNewSpace1, NewGlEvtLinesCount)
-		--internal.SetArrayUpval(Game.GlobalEvtLines, "lenP", GlobalModuleNewSpace)
+		internal.SetArrayUpval(Game.GlobalEvtLines, "lenP", GlobalModuleNewSpace)
 		ChangeGameArray("MapEvtLines", GlobalModuleOffsetsNewSpace4, NewGlEvtLinesCount)
 
 		offsets.CurrentEvtLines = GlobalModuleOffsetsNewSpace3
