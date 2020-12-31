@@ -20,6 +20,8 @@ This patch works for Rodril's English original version <sup>[Note 1]</sup>. It m
 
 <hr>
 
+You can [use the .md5 files to verify your game files](https://github.com/might-and-magic/mmmerge-update-patch/tree/master/md5) after your update.
+
 [MMMerge Changelog](https://github.com/might-and-magic/mmmerge-update-patch/blob/master/changelog.md)
 
 <p align="center">

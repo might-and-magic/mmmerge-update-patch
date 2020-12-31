@@ -1,0 +1,378 @@
+fe2fd473fc45fc0cd9a66aed0ca148f4 *mm8.ini
+65fa27b8a133ecebebc594eb62ed10c4 *mm8lang.ini
+887b9545128208b48f25c6246f297eeb *MM8Patch ReadMe.TXT
+e7201452c2102fb16b42804d88ad439f *MM8Patch ReadMe_rus.TXT
+d7b05a7596d12d83fd847b144f059e9f *MM8patch.dll
+1db24c442c6f36f4c896b0e3b3dfbeeb *MM8Setup.Exe
+89d3ab5ebf4a3e3c18effae17047aa15 *MP3DEC.ASI
+a03c358d2210e3d0ef6fd29c293f38c4 *Mss32.dll
+3f567328ede497860cbf3d9b78216450 *Mssa3d.m3d
+b38936c542c2b74a44dd59cdc1d3e027 *Mssds3dh.m3d
+d9f15b44954f66e64bab77063a2045f4 *Mssds3ds.m3d
+3719091472adfea469fd55ca71b4d82a *Msseax.m3d
+6ab778c1650d8d999d9b434345a143f8 *Mssfast.m3d
+81ad7af507841f48880e421b6c1a5a31 *Smackw32.dll
+f0643aedf15529fb45cea9a9efcffd2b *Anims\Magicdod.vid
+17ee08aa91175b9dddc0f389ea1a5ee0 *Anims\mightdod.vid
+97b076381cd1e5b83df39333272bd76e *Data\00 patch.bitmaps.lod
+e747c854f11807fee0031deaeb14e6fb *Data\01 water.bitmaps.lwd
+73f34d6aa1c908a34975447c40a90411 *Data\03 LocalizeTables.txt
+24bf4929eba149369fd62e23de1eeacd *Data\10 LocZHTW.EnglishD.lod
+4defd611c1aba8d3f600bc0d1a285b4e *Data\10 LocZHTW.EnglishT.lod
+7110b98fab9c8a17517a9698457c914c *Data\Additional UI\6UI.EnglishD.lod
+8c82fef71dc0615e1078421492ff8dea *Data\Additional UI\6UI.icons.lod
+b4d031b5718ed9deafcad3489a2f9446 *Data\Additional UI\6UI.icons.UI.lod
+35fd8dfebe0eaeaa4f53a42995559a8d *Data\Additional UI\7UI.icons.lod
+40294e6c450aa90dd671c13dbacb35fd *Data\Additional UI\7UI.icons.UI.lod
+3c0101a168f7792f20f4bd085c591098 *Data\bitmaps.lod
+ff1082c7391b41fb77e263fb3077a490 *Data\BlockMaps\7out01.bin
+d63c1eaae67f3ff6e5f7ce32a47a997f *Data\BlockMaps\7out02.bin
+d99f6f64e1eb8c959b910f6478c5559d *Data\BlockMaps\7out03.bin
+c9e8e357a926f4c39f75ddbca2a40d6c *Data\BlockMaps\7out04.bin
+179bde6650824f9b4e60cc2860d8c72a *Data\BlockMaps\7out05.bin
+e249f1784c05904233cf4b088e06d9dc *Data\BlockMaps\7out06.bin
+313bebf7dd92200af35893e6414ea0a0 *Data\BlockMaps\7out13.bin
+b5084e51b16916c561804ad3007bb8c3 *Data\BlockMaps\7out15.bin
+02e23b58870820c96d497be83f345a1b *Data\BlockMaps\bralvar.bin
+0dd81b26636e16f76efd6881e56f4d64 *Data\BlockMaps\breach.bin
+559bd58830da9d3974abd228e2ce8399 *Data\BlockMaps\elema.bin
+d6918fd8e60e5f611ce0791995e56dec *Data\BlockMaps\elemf.bin
+f46779a4878f753c1240a6b76a3d5e7b *Data\BlockMaps\elemw.bin
+48b366adcfad6467d49c2c485ea48742 *Data\BlockMaps\out01.bin
+8d8456504f1d901a86279524a936374d *Data\BlockMaps\out02.bin
+fb2b2ba10cc871d19014e78f56a23075 *Data\BlockMaps\out03.bin
+1b05b355ee523574624b28b6f373ef55 *Data\BlockMaps\out04.bin
+a62ad03ebb373f9ea3df00d691a73a00 *Data\BlockMaps\out05.bin
+1613ab152b2ff80988792d980530bbff *Data\BlockMaps\out06.bin
+2a6380dc26632a502c594a1630b3dacc *Data\BlockMaps\out07.bin
+c929755b4539a7bd73df09d0439b4ae5 *Data\BlockMaps\out08.bin
+576fcd1b2cff5e386524b895ebd4bc2c *Data\BlockMaps\out09.bin
+044eaabd9b896ffc4cdd75966e42d572 *Data\BlockMaps\out10.bin
+17105d97d8b9587673a9aa9ef034f97a *Data\BlockMaps\out11.bin
+f722c6fc7edf7415a8e68513070c5c0c *Data\BlockMaps\out12.bin
+f4befcb9a6a9b23e8c8e72db0033bc22 *Data\BlockMaps\out13.bin
+4767394423af19939727ba22ea8a04b3 *Data\BlockMaps\out14.bin
+5d3985dd7fac771416199ab5ef0636fb *Data\BlockMaps\out15.bin
+b91d3a15e8f95a1696a5cc0af31abb2c *Data\BlockMaps\outa1.bin
+281707a6d139d8baa945c4ba82fd195d *Data\BlockMaps\outa2.bin
+8cbd151d4c5119a0cebaff2ad9da6797 *Data\BlockMaps\outa3.bin
+fe3d94ab9ff7a2f81dc9d26160b5b39c *Data\BlockMaps\outb1.bin
+9fe4e6acd68776b54eb89805538fe477 *Data\BlockMaps\outb2.bin
+d8577c7e44bb1d223e458e01066d2327 *Data\BlockMaps\outb3.bin
+ea022dffd223e1f96d58c04c2cb1a62f *Data\BlockMaps\outc1.bin
+869a28c66cf27c48834dc7c9cf90816b *Data\BlockMaps\outc2.bin
+20328cb389b1e8baf13495160227f325 *Data\BlockMaps\outc3.bin
+558a1b6ba88f7c3fb4d4e20b85b84696 *Data\BlockMaps\outd1.bin
+53d8910e93bf1a746b6a1420542522f8 *Data\BlockMaps\outd2.bin
+0a812e9af47ee4f0ad7d6b43741e7c8c *Data\BlockMaps\outd3.bin
+503584ac3fd64dc2463f7cdb088bca22 *Data\BlockMaps\oute1.bin
+fe72c17a646e40577eb193b2be748043 *Data\BlockMaps\oute2.bin
+e4e5c4084b03ca792c282859370ddcc8 *Data\BlockMaps\oute3.bin
+41fe3e02f43b19a5c18b748269871b3e *Data\BlockMaps\pbp.bin
+f0907e21e84b4369dbdc11d40d1b1758 *Data\breach.games.lod
+e8ac54fdc71e8acff2190dac02e1ffa1 *Data\dwarves.icons.lod
+c859903b6bbddfe17108410c857154a1 *Data\editor.bitmaps.lod
+7f725e5f12872aac7caaa6e2e1d140d0 *Data\editor.icons.lod
+9d6803052648e4b0d2be468bedae9f2f *Data\editor.sprites.lod
+46c6ecefa085f607d09c428bb7770c50 *Data\EnglishD.lod
+e6dfef8259dd739857efaca68e858127 *Data\EnglishT.lod
+bebe00fd12f0ee9f371f70384b901df2 *Data\games.lod
+f1e30a46005fff40f81806f487565558 *Data\icons.lod
+e54c56e2faae1389d70c2e209e4b2107 *Data\icons.UI.lod
+f85de925ee7d4b07c20a3d2410ccd617 *Data\LocalizeConf.ini
+f16948368ba630fd3226fc3e60d93d45 *Data\mm6.Bitmaps.lod
+f5d5d3313be01061a302ff1b86422732 *Data\mm6.EnglishT.lod
+9df786c61f6f7b4e77c19e23bf19f4ca *Data\mm6.games.lod
+f227ae47c273e59b815e7ab7e2b1f42c *Data\mm7.Bitmaps.lod
+23bdb7f478e24ad87675618223459ef0 *Data\mm7.EnglishT.lod
+57cdf17473d65cf66175edffdc7601b1 *Data\mm7.games.lod
+383b2ef2d33330bef04c26bab0aaf283 *Data\MouseLookCursor.bmp
+88e3732eb087c2721e91dd8f6fbc537c *Data\MouseLookCursorHD.bmp
+a7d903f0f2dd4b3823afcf30377b2c19 *Data\patch.icons.lod
+f55d39b5a128e1e44d9e01d876469a53 *Data\patch.UI.txt
+f524775ad3b9d6a6cbb0807b527b0df5 *Data\select.icons.lod
+ee40efd918e1288840861553d2f4f5ed *Data\sprites.lod
+9de9857cde2942c6fe258e74fc0a64cd *Data\Tables\Additional UI.txt
+aa13fc80e3216ffc7e50674503b028c8 *Data\Tables\Bolster - formulas.txt
+4786cfce4d891243488babc69e068043 *Data\Tables\Bolster - maps.txt
+fc49923e0b10f9076d53ab325fb15821 *Data\Tables\Bolster - monsters.txt
+d977c1954789dfd7ea97e6c37d79f9a4 *Data\Tables\Character doll types.txt
+5e7ab5938b9794c0b522fda9c2914187 *Data\Tables\Character portraits.txt
+75338693c8c877e6c944d6ecfde78423 *Data\Tables\Character selection.txt
+e3d10dd4e75908ff04c75ae97a607f40 *Data\Tables\Character voices.txt
+bca36cab27958d87f197189ee8e4ac2d *Data\Tables\Chest.txt
+4fec53746515fc7fbf18a8c769c5df92 *Data\Tables\Class Extra.txt
+85d3c96c4ae6256655c9e19a2b40e046 *Data\Tables\Class HP SP.txt
+fd9c543d976538917092391b459dc05a *Data\Tables\Class Skills.txt
+45bac8b3e691bb89b22f0badd7038e61 *Data\Tables\Class Starting Skills.txt
+f639da3edf1bc5babaebff1732c90025 *Data\Tables\Class Starting Stats.txt
+3ee9181dc0a9d74a0a75c27505637f56 *Data\Tables\Complex item pictures.txt
+bb22ece292ae0e149e90d69d63eb1b97 *Data\Tables\Continent settings.txt
+d8a91ab59b60daca2af367d300b73275 *Data\Tables\DecList.txt
+76df87d1641fe69efca7576620f50dcc *Data\Tables\House exits.txt
+a47a8d551663e297f07a7e22109b9df5 *Data\Tables\House Movies.txt
+76aee75e67bf73892dd340a536d35999 *Data\Tables\House rules.txt
+490685fea061a4b7c71f1816c607d3b5 *Data\Tables\HW water textures.txt
+15deedc1740e4645b14fb79561f877e4 *Data\Tables\IFT.txt
+f8cb82826880e76baf56a4783cca8968 *Data\Tables\MonList.txt
+5a3e1e4039f20dc49792c2fb63d4e931 *Data\Tables\MonPortraits.txt
+f421d7cdbea5da851c6a9db75a26c946 *Data\Tables\News topics - area.txt
+353b31b85231ab24931faaa3b73aa87a *Data\Tables\News topics - continent.txt
+ae0342df9ef84e19c9db1ca18991371e *Data\Tables\News topics - profession.txt
+f182ce7970766f0a0e5ac61a3433db72 *Data\Tables\NPC BTB.txt
+e65150a9a44fe65fe1c6f17869622bfd *Data\Tables\NPC names.txt
+87286225529069b0a2f1646ce7deb3f3 *Data\Tables\NPC professions.txt
+dee46f929885797f02572bf76b62ca1b *Data\Tables\ObjList.txt
+255a18b701b7b66753a69143024cfbff *Data\Tables\Outdoor travels.txt
+75efb9c9b8ce86136651983de8994b09 *Data\Tables\Overlay.txt
+f2dfaa3c93d0bb456b411ddf2f50d25c *Data\Tables\PFT.txt
+a2b17406825ca782fac3ae1d7d1a620e *Data\Tables\Potion settings.txt
+c7aed867c45188caf3e6483eca2d39b4 *Data\Tables\Race Skills.txt
+7d868996504f8ba5e4b000e7d9360f13 *Data\Tables\Reagent settings.txt
+6f3dae0ac8d3aa78b6334afd1fdfd555 *Data\Tables\SFT.txt
+c616fb9014797ce0533b62dc547f376b *Data\Tables\Sounds.txt
+ab05f5a2e447f9502a1b5bbd23406cd8 *Data\Tables\Spells2.txt
+68ee7385c00438d6bb02b9edabb9d3af *Data\Tables\Teacher autonotes.txt
+e20735323568fb94a0a08eeb4bbebb22 *Data\Tables\Teacher topics.txt
+3a557cb3a62b2129d5737ca7a7a0da52 *Data\Tables\TFT.txt
+4625423692f80b893654b79e31a86234 *Data\Tables\Tile.txt
+c2df7b2aeec1aa7b7e5f674c392faf26 *Data\Tables\Tile2.txt
+7ebdbfeebc52fb61747fc8d5d8846035 *Data\Tables\Tile3.txt
+ca35b202250333846d4500ef6a924b12 *Data\Tables\Town Portal.txt
+0a8e0bddcf606f4830fe6497325c32f3 *Data\Tables\TownPortalSwitch.txt
+bb172d1ac35c7578234a4f8b88f3d015 *Data\Tables\Transport Index.txt
+cccd18e89b53d2ca9de55c2d0ae6545e *Data\Tables\Transport Locations.txt
+9007187ac1ce5cea840a563760a3cb66 *Data\Text localization\ZHTW.txt
+ac061968b16bb2a9cd1abb8c5415ab8c *Data\Text localization\ZHTW_2DEvents.txt
+4299326ac391d7123bd9382718a2ab37 *Data\Text localization\ZHTW_ItemsTxt.txt
+7b70aaf7475d5712f6600f7770b19d12 *Data\Text localization\ZHTW_Monsters.txt
+ce581979e0ed0f62f91b2ca2a0c132fa *Data\Text localization\ZHTW_NPCNames.txt
+6a0a9dcea9d30801d610c9c68e881296 *Data\UI.txt
+e13b75f6ed47962faf5573897b797f73 *Data\z10 LocZHTW.icons.lod
+81105deded1d98616b53800a8303ce85 *ExeMods\MMExtension\FASM License.TXT
+f1fd730fd2ec5c66f6c43dbc291819f6 *ExeMods\MMExtension\FASM.DLL
+57b5e5060b148bd180132935ab2a2572 *ExeMods\MMExtension\MMEditorDlg.dll
+6e17149823d83ae3b179a95e8a1dc2c5 *ExeMods\MMExtension\MMExtDialogs.dll
+85759ac3b9af2b98fd934ab58017f42f *ExeMods\MMExtension.dll
+b12baff1f2319d0f40fa593b61e175fe *Music\10.mp3
+972ead0a961ea3924df35ae3cd98a58d *Music\11.mp3
+348b64d94dbbf6b4436d37a01d25445c *Music\12.mp3
+4fe7569095ba4e8a23911c44352bd994 *Music\13.mp3
+e4f6e914eb9e6e3270c76899dc332f23 *Music\14.mp3
+7d171f600f6b2190ddc3717498743aa9 *Music\15.mp3
+80b4abc515866091f57d18fe792ad791 *Music\16.mp3
+b0c443b0e855c16dfdc2906618ff3f73 *Music\17.mp3
+fe91ec0d829cf4866b53dea759ce2450 *Music\18.mp3
+a486cd12c1ab0a0441cd0592bb08d3f6 *Music\19.mp3
+aeae24f13f8c6cc5277a3e535560faf3 *Music\2.mp3
+d70b7b557668440b2d500d36d4bef952 *Music\20.mp3
+b71348b0238a2670d051f8d8e1f53b8c *Music\21.mp3
+cc3e8cbde5c76887b2948a9dbe9c3c37 *Music\22.mp3
+fdbb18eec5bc6cc2fa94ac9c7bc72065 *Music\23.mp3
+6dd8b4055059f96e661d5248e817acea *Music\24.mp3
+6113d7b01966da1d588fbfb506f81d10 *Music\25.mp3
+8032c4d5c745f32822c82c4141bac0a0 *Music\26.mp3
+10d090088ccf3d0ef32ceeabd12eda43 *Music\27.mp3
+e8983813790fa60bfbae96a8248cff67 *Music\28.mp3
+bcac1882cb3fd3b47abcbcc662ec2cd6 *Music\29.mp3
+84059db4056c3815f05312ac2143584c *Music\3.mp3
+57ef2b381e4d812bb0f27be34b1ef5a9 *Music\30.mp3
+ce879722b2c5475faf8bfa88c802661e *Music\31.mp3
+4648536376996291d0e2909f937d0073 *Music\32.mp3
+9f1305a3df350a306ae40de170b7c2e3 *Music\33.mp3
+e627990c9ae25e41cc949fa1a1cd94dc *Music\34.mp3
+f299211627e93e96a2190fee8a9b1b83 *Music\35.mp3
+46afb2ffedc6aa44a8b0fe98081cbd86 *Music\37.mp3
+e18017022d1d0053104a698da5616d72 *Music\38.mp3
+060bd1fb8949aa06a7d3ef4f392ec9c0 *Music\39.mp3
+f202fa2b5521db11a1d58991bcd9103e *Music\4.mp3
+8e2e06eebaf612ab3fdf64da260652ee *Music\40.mp3
+0b97a0c8bb892f6b0f847adcb100ea5d *Music\41.mp3
+27c036c6390162be94031e118cdc3eb9 *Music\42.mp3
+5acb67e20b2105dd1000cb018d81ddc6 *Music\43.mp3
+ab2ff954da9d3f7012399a87e65bd9b7 *Music\44.mp3
+eae715b3eecad4b6642b58d8bd13c3fc *Music\45.mp3
+3ab46c9e123973359c9282ce8841f78e *Music\46.mp3
+c28be19717ecb455433682d242d32fb2 *Music\47.mp3
+2c3f058834eff4ad862157cf747ec04b *Music\48.mp3
+b0f6e4165a9d2849da075e174c9ef955 *Music\49.mp3
+190aaadc91127639db686465d2cb5be6 *Music\5.mp3
+8f3ae41170d12d294097bc3f86aca708 *Music\50.mp3
+15c2a0f182fc32257d89f1944a3c7e67 *Music\51.mp3
+6c1ecf4a9688c5eeb74330e878af4ccc *Music\6.mp3
+fddc8e688e23c2c435e375fb4657b348 *Music\7.mp3
+b477eb61be72c6fd5f64f7ef886b5bfd *Music\8.mp3
+b4a28edfa8d1fd804fcf0b65f1c12165 *Music\9.mp3
+377a5b343964acebaf990918b9f7fe16 *Scripts\Core\Common.lua
+c41d45cb1287765f4fa2c020e07725d5 *Scripts\Core\ConstAndBits.lua
+07f9eb2666842e402d1329cb859b64f2 *Scripts\Core\Debug.lua
+0e5b6f595f31a097abda3123a239b300 *Scripts\Core\dump.lua
+323c4755422eaaa6777a9e61b4af584a *Scripts\Core\ErrorFunction.lua
+741ceb181a57a39b0eac13becc5c2a8b *Scripts\Core\events.lua
+cbb17485adc59f83000fc379db2cff3a *Scripts\Core\EventsList.lua
+5c567e39ba8ee7cd4b4dc442b5a06126 *Scripts\Core\evt.lua
+396a9e5f684253dc0e81380f19dfbd2e *Scripts\Core\main.lua
+4065b251af28221fdc03a0a513efbf52 *Scripts\Core\mobdebug.lua
+dcf3098ba5e9e1e40bcfda0f9ed989a6 *Scripts\Core\offsets.lua
+7567a14af55ffea0a36ed5ed3bbfad28 *Scripts\Core\RSFunctions.lua
+1c63dedc5ea4274802e1e2dbe77b70c9 *Scripts\Core\RSMem.lua
+d68fb0fa6e05cb7194f06d191e39f733 *Scripts\Core\RSNoGlobals.lua
+8e656dc43cf0190a789fab14c7009f1b *Scripts\Core\RSPersist.lua
+f8d9f766ce71816a68c90bb12a29eed9 *Scripts\Core\socket.lua
+0c169ffdc673ba9eaca29b4b52732549 *Scripts\Core\timers.lua
+be329bbc42b2f56e70a0e36bad9ab192 *Scripts\General\1_TownPortalSwitch.lua
+886fc771dc42009b748eba7cc28bce1e *Scripts\General\2_OutdoorTravels.lua
+2ce2c8e2f22062a8024b38d4a30b1457 *Scripts\General\AdaptiveMonstersStats.lua
+da4dbe4068435d9a4d27b1ab01948efe *Scripts\General\Additional UI.lua
+1ef37e3e8297ca026007725104a0e5f3 *Scripts\General\CouncilAppearance.lua
+8a7e8fb9bfbe0bef51e6fc2c61eef205 *Scripts\General\DataTables.lua
+353cc603ed83cfb5de08fd197922303f *Scripts\General\DebugConsoleKey.lua
+7274168e1dfbab39a2f8518c9cb84465 *Scripts\General\ExtraEvents.lua
+0d02c7dba31461f3b06b87ea94f00b80 *Scripts\General\ExtraQuickSpells.lua
+3ad3ea2778670d40a9accc7bdbaf9732 *Scripts\General\FNT_DBCS.lua
+dfe5d6fe93617ef6cd8482381c384065 *Scripts\General\History.lua
+15024c0a3512650f874c8f9ff6d9a258 *Scripts\General\LocalizeTables.lua
+687d81b828420e461b87c5e5a2c68cee *Scripts\General\MenuChooseCharacter.lua
+c75fc3de89a523b7a4e32f0822cd003d *Scripts\General\MenuChooseContinent.lua
+70708cca2d6c5d72b09ca1a7c8c0d8dc *Scripts\General\MenuControls.lua
+9012245aa66f704e04925da4904c9082 *Scripts\General\MenuExtraSettings.lua
+0d5145ff001783d2c1bb1ac09553240f *Scripts\General\MiscTweaks.lua
+4a10257a0a95238af74dd6edf2e25cca *Scripts\General\MonsterItems.lua
+66b0d0632df01e47076243bb7af76a8e *Scripts\General\NPCFollowers.lua
+e072685886d6867b185cc7b50beaf268 *Scripts\General\NPCMercenaries.lua
+8c0df2b3ecaf3624c8b82832db610b78 *Scripts\General\NPCNewsTopics.lua
+809f5571e35b45313a3fc8a941fe26df *Scripts\General\NPCTeacherAutonotes.lua
+8033905f8632c7290c78c675711ae328 *Scripts\General\PaletteMul.lua
+6178ca17864c0bd1eabdf08f608d76e5 *Scripts\General\ProgramName.lua
+d8205b87c4ede1eff64fda9154b42b91 *Scripts\General\SpellsTweaks.lua
+1540bb2f3a1ec22d2b6f3703cbce80ef *Scripts\General\SwitchGold.lua
+7e63bd4e970932f5c9d062a0eaa95a6a *Scripts\General\UsableItems.lua
+b659c7560e14a347fdee81761956fd0f *Scripts\General\Weather.lua
+58d8993900a34eb54ba03f382e102b2d *Scripts\General\ZombiePlayers.lua
+bf299ba61a3d19063a086d5809718157 *Scripts\Global\Editor Base.lua
+37eac84378d3ed87de241752894f7946 *Scripts\Global\Editor BSP.lua
+606f4aba9ff973b607b1e840bb773e96 *Scripts\Global\Editor Data.lua
+8ab1f8e3e7b3e4bb714ad22781e567c8 *Scripts\Global\Editor Export.lua
+62ff5e670570a06ff0d75e067ac47cda *Scripts\Global\Editor Ground.lua
+fb646597da54f6243b5fedfeff804734 *Scripts\Global\Editor GUI.lua
+7ee6c36ce5a2500df4173bb878edd9b1 *Scripts\Global\Editor Import.lua
+457285404c6421c33082deb3d159673f *Scripts\Global\Editor Navigate.lua
+5b4d7155ace21447cbb36ef5df572cf5 *Scripts\Global\Editor Odm Data.lua
+424998de0c85d9569b9bfa8064f19490 *Scripts\Global\Editor Odm Read.lua
+d3aa5930aaf4d65b15655a003d89c061 *Scripts\Global\Editor Outdoor Infinite View.lua
+2329bbbfe15537ae8b7275ec253a8845 *Scripts\Global\Editor Props.lua
+d52080559570ea08465319c472655309 *Scripts\Global\Editor Read Data.lua
+28657a9676ad56e25b303fc5623e6b71 *Scripts\Global\ExtraArtifacts.lua
+d1d2d815ffe1b992a677bd3a3b4b5ee3 *Scripts\Global\ExtraPotions.lua
+b767464932de7b0860e5ad9950f57c68 *Scripts\Global\MonsterPathfinding.lua
+9d9f466933f1e0bf648cc48bdbf46dd9 *Scripts\Global\NPCFollowersSkills.lua
+a52efd0e5f504045e564efac921b254a *Scripts\Global\OutdoorAnimObjects.lua
+f6b6777d868320702793ae91dba3604f *Scripts\Global\PromotionTopics.lua
+a88b90936d968821695fca40e1249e73 *Scripts\Global\Quest_CrossContinents.lua
+78d1f329e66c0d19061efcebe5d44611 *Scripts\Global\Quest_DragonHatchling.lua
+356332500ca0261e4942b9351ffdada2 *Scripts\Global\Quest_EnrothDarkArts.lua
+d470aad3ecf2b4448156d82eb2263522 *Scripts\Global\Quest_EnrothGrandmasters.lua
+83983df823b44fc933df58bbaa328c7d *Scripts\Global\Quest_SavingGoobers.lua
+61bbb3f9b5495abf13bd0b995575038d *Scripts\Global\Reputation.lua
+cef7eaa33d2f4f2890e616c6c2a3d6a2 *Scripts\Global\StdQuestsFollowers.lua
+3e0636ca2bb2feb4dc04247f207c5ebe *Scripts\Global\StdQuestsFunctions.lua
+35d48cab11c00ecb378adf5c909ed7d9 *Scripts\Global\TownPortalSwitches.lua
+ce60d57071bf758b5f91cd74578857b9 *Scripts\Maps\6d02.lua
+906e84aa7dc96b7f9207d54d346d6a96 *Scripts\Maps\6d03.lua
+b5de622a2dab9d85ba6461955b2c2675 *Scripts\Maps\6d07.lua
+f58743dda9daf23835f6cff8c9e32cf1 *Scripts\Maps\6d08.lua
+41f23123922429bcd3dd80d904d8191f *Scripts\Maps\6t3.lua
+dac8bd5f0a40ec6e4bbe65d88d326b9f *Scripts\Maps\6t8.lua
+3efdb1ea42ad149682c213d93682da2b *Scripts\Maps\7d05.lua
+16127983994d7348f4f56e70df2e91b1 *Scripts\Maps\7d06.lua
+7a24e4f4300ae3568d4987ce686bb323 *Scripts\Maps\7d08.lua
+1bac19f5a9cfc6b5d4e18444b1bf5a79 *Scripts\Maps\7d23.lua
+365784c48254cf53efba9895be0055f3 *Scripts\Maps\7d25.lua
+ca8c0d75583c1e3e47384ae94a8070e1 *Scripts\Maps\7d27.lua
+cc9f0657cce59d9f1344777aeccbc947 *Scripts\Maps\7d29.lua
+434b8dff351ea0c01d7814bce6d3c3b7 *Scripts\Maps\7d30.lua
+23c4dd520d2f4165bbba17390d961acf *Scripts\Maps\7d34.lua
+d08638cd8bcd559f833bdb4148e3f999 *Scripts\Maps\7d37.lua
+b0413a5396fa64f0ce2b7462a23da1bd *Scripts\Maps\7out01.lua
+7574ba31ad56d50eeec1a8a35ee8e724 *Scripts\Maps\7out02.lua
+46ad605b4d05f3852fcce6d56775ecb2 *Scripts\Maps\7out03.lua
+824a0500c6742cace41293c160b82bbb *Scripts\Maps\7out04.lua
+8bc962493b8b2a32d6a4abf0eaed0b1f *Scripts\Maps\7out05.lua
+6407064a1e9d22eb927a7ec42d22dae2 *Scripts\Maps\7out13.lua
+05590a6901a0f2e47029cd901fcc4f63 *Scripts\Maps\7out15.lua
+8891c29f2b602e133c2446b7567cf61e *Scripts\Maps\BrAlvar.lua
+60919840376344d92a635f38529b3388 *Scripts\Maps\BrBase.lua
+85a8f488d493d4ce9f4c3a39a73889f5 *Scripts\Maps\Breach.lua
+7a66786e5436f9495b0ae0afdec67ddd *Scripts\Maps\cd1.lua
+46bb19b88d46dd2acb96444f268d3c11 *Scripts\Maps\cd2.lua
+dc468f63bd0c8d4fb55655955279d599 *Scripts\Maps\cd3.lua
+5f16f01a441453b5b235a5ef7944ed55 *Scripts\Maps\d03.lua
+f25ad8092a99d7ba97620347082fc13e *Scripts\Maps\d07.lua
+efa16bdd3b86560ce08042e44b329c26 *Scripts\Maps\d19.lua
+fe451de756514bee557baf8b2c879166 *Scripts\Maps\d24.lua
+d78f084c20dbdd14c0ce415761600ead *Scripts\Maps\d42.lua
+f55808565c7bae3661afd2e91af51932 *Scripts\Maps\hive.lua
+cc0ed8d90e999564be1f4aa994b6d488 *Scripts\Maps\oracle.lua
+27adcfb1c9afb1a36fab4870dbfa80f3 *Scripts\Maps\out01.lua
+f59e7b5c4a45368d5fd5bf3a1f1d105f *Scripts\Maps\out02.lua
+686e1fbf8d504937ec0fdbc7b3cffe73 *Scripts\Maps\out04.lua
+8aa5851f0a7c73454666cfc5f6f2484d *Scripts\Maps\out05.lua
+3d6667f6545c7f666a6ca1da562fd38e *Scripts\Maps\out06.lua
+4e5177b3b985e679032c0643da88c1a2 *Scripts\Maps\out07.lua
+51609315c764ba1b3b7524fd30979b57 *Scripts\Maps\out09.lua
+faebb1434af7e145cd3587250935ab97 *Scripts\Maps\out11.lua
+cad70fc879882da06787b46eccd225de *Scripts\Maps\out14.lua
+3a658b6e7ad12183a1b098f5a5140c4a *Scripts\Maps\outa2.lua
+d04c73619daa0d9767becdc430c10861 *Scripts\Maps\outa3.lua
+ef74fb350d71ab36abd1d532fe1b574d *Scripts\Maps\outb1.lua
+951e1599a698a3ec69ee2c32dcc6224d *Scripts\Maps\outb2.lua
+672956e399a8cb99ff0995e2fc76be4e *Scripts\Maps\outb3.lua
+b3eb810bfc2649c75bbdb2a7788bd701 *Scripts\Maps\outc1.lua
+91734182a463fb1113b04551a4025a1b *Scripts\Maps\outc2.lua
+dc4acc227c8267df185588a18876e7fc *Scripts\Maps\outc3.lua
+fd3d8f85d539c57b1ffa753a5c27e95c *Scripts\Maps\outd1.lua
+cc23f6adbbe309b0f8d1160e13fec5ba *Scripts\Maps\outd3.lua
+7a16bdc001f22408b579bf21f5a087e4 *Scripts\Maps\oute2.lua
+dd4a40aaba34671f4d5880e74bcfec54 *Scripts\Maps\oute3.lua
+6f7e78a5d3758848819ac42c06055414 *Scripts\Maps\pyramid.lua
+7b368ce7e1704fd46497fdbf666501ef *Scripts\Maps\sci-fi.lua
+c1f99d7a2d032de7f1a1e6e2c43090a3 *Scripts\Maps\sewer.lua
+96705697389aa5b9a24b9de127a0720d *Scripts\Modules\PathfinderAsm.lua
+311353ba074a26e679181d7d4ffa14d2 *Scripts\Structs\00 structs.lua
+4feb300c65bf9846850e8c98ba0d693c *Scripts\Structs\01 common structs.lua
+9be932ec9ce463c1caa3c913b1bddabf *Scripts\Structs\02 Increase Facets Limit.lua
+be0aec9b6a156bf26397527d14dea5d6 *Scripts\Structs\After\Backup.lua
+858d4ee4dfc03de21a7f8ed5412eded3 *Scripts\Structs\After\DataTablesSupport.lua
+c9a0c3beb8c93b19281c98c348b9b69c *Scripts\Structs\After\Functions.lua
+9d260f41ef82048602c11a20035b5988 *Scripts\Structs\After\GlobalEventsNewHandler.lua
+1d8a1fde7a6eb4712a158a5deb421212 *Scripts\Structs\After\HardcodedTopicFunctions.lua
+c28aba43685a4414e86e68ab23709dcf *Scripts\Structs\After\HWWater.lua
+ce0c4929e604df46bd3c69f15c8731f4 *Scripts\Structs\After\InterfaceManager.lua
+dfc71838ece8f199798d76d20c8afcc0 *Scripts\Structs\After\LocalizationAndQuests.lua
+e87810a1f1685f0bb5789bf6c751c61a *Scripts\Structs\After\MM8 Blaster.lua
+9fde1c9e0d4acb4d1b855933adc65359 *Scripts\Structs\After\MoveModel.asm
+971c50c88abcab52fdb4678765dc2a4d *Scripts\Structs\After\Palettes.lua
+f9e16589eb1951b9fa99828454f3339d *Scripts\Structs\After\Remove2DEventsLimit.lua
+0c02a90a8f34204f41d4c16496764b74 *Scripts\Structs\After\RemoveClassLimits.lua
+29aaf1886e90e9b8e217028c5dc4c1a5 *Scripts\Structs\After\RemoveHostileTxtLimit.lua
+1b2bfaa16ce7d22a100231d4b5f9bc53 *Scripts\Structs\After\RemoveHouseMoviesLimit.lua
+acf38a40c66cc9d05de4710812a698c5 *Scripts\Structs\After\RemoveIndoorLimits.lua
+b6083826b47d537d7476186a0e12b3a0 *Scripts\Structs\After\RemoveMapMonstersLimits.lua
+5ab7e4fc20e4528b0cbfc6f7dfd93b8d *Scripts\Structs\After\RemoveMapStatsLimit.lua
+19d93cbb7865f7648314155956d04ea0 *Scripts\Structs\After\RemoveMonPortraitsLimits.lua
+725eae18b81f3fc42c1499eb5f211837 *Scripts\Structs\After\RemoveMonstersAndPlacemonLimits.lua
+b0a681c22400fc8d6f3eb86e8a56fcfa *Scripts\Structs\After\RemoveNPCTablesLimits.lua
+34e5f038104f593f8f21490446a66b7e *Scripts\Structs\After\RemoveOutdoorLimits.lua
+4b2625fe842dce26ee6a1c9f0f1268ad *Scripts\Structs\After\RemoveQBitsAndABitsLimits.lua
+04a7bda5ba8b76a6e8ed21b0b2ec9a93 *Scripts\Structs\After\RemoveSkillBonusLimits.lua
+dc73cfbf322fc4f18b7a1d689c4fe948 *Scripts\Structs\After\RemoveSpritesToDrawLimit.lua
+54243b5bb6759e04e76fa3b731f820bb *Scripts\Structs\After\RemoveTransitionLimits.lua
+70f0b0b24b9f8e9f71188b48c6802110 *Scripts\Structs\After\RemoveTravelLocationsLimits.lua
+90e5ecb1c0fab291a9f521c80e493b81 *Scripts\Structs\After\Text Tables.lua
+89e695518ece314355bc74fab2e8c719 *Scripts\Structs\CharacterOutfits.lua
+e8e93f41e7847deb73e98ff223b49cb6 *Scripts\Structs\GlobalTxt.lua
+ddab5306f612440ef734e31121e1360c *Scripts\Structs\RacialSkills.lua
+302b6230ebe77d65e933943ddd9f79b6 *Scripts\Structs\RemoveHouseRulesLimits.lua
+e2b30753fbfe6a950e6abdafc8d46ccd *Scripts\Structs\RemoveItemsLimits.lua
+fa6aa3bd677de6c39af1521c0f029481 *Binkw32.dll
+72fb42015cedbee667ed28da3f6da642 *mm8.exe
